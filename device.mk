@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+GAPPS_VARIANT := nano
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -53,3 +55,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_phase_offset_ns=1500000
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_app_phase_offset_ns=15000000
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
