@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-include device/qcom/wlan/msmnile/AndroidBoardWlan.mk
+#include device/qcom/wlan/msmnile/AndroidBoardWlan.mk
